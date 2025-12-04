@@ -1,0 +1,129 @@
+/* Reset + Modelo de caja */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232323;
+  font-family: sans-serif;
+  color: #fff;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 12px;
+}
+
+/* Estilos básicos de texto */
+.text-style {
+  font-family: monospace;
+  font-size: 1.4rem;
+  font-style: oblique;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.purple { color: blueviolet; }
+.orange { color: orange; }
+.celeste { color: aqua; }
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.btn-link {
+  display: inline-block;
+  background-color: blueviolet;
+  padding: 10px 18px;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: .3s ease-in-out;
+}
+
+.btn-link:hover {
+  background-color: #a05bff;
+}
+
+/* Divisores */
+.divider {
+  margin: 30px 0;
+  border: none;
+  height: 2px;
+  background-color: #444;
+}
+
+/* Box Model */
+.box {
+  display: inline-block;
+  background-color: blueviolet;
+  padding: 12px 50px;
+  margin: 30px auto 0;
+  text-align: center;
+  border: 5px solid #fff;
+  border-radius: 8px;
+}
+
+/* Card */
+.card {
+  background-color: #2e2e2e;
+  border-radius: 14px;
+  margin: 30px auto;
+  width: 360px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.card-image img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content p {
+  margin: 12px 0;
+  color: #d1d1d1;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.card-user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-user-info img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.publish-date {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.share-btn {
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.share-btn:hover {
+  background-color: #a05bff;
+}
