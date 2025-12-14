@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables (pensando a futuro) */
+:root {
+  --bg-main: #f0f0f0;
+  --card-bg: #ffffff;
+  --primary: #6a0dad;
+  --text-main: #5e6863;
+  --border-dark: #000;
+}
+
+/* Base */
+body {
+  background-color: var(--bg-main);
+  font-family: system-ui, sans-serif;
+  color: var(--text-main);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Layout general */
+.layout {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  margin-bottom: 25px;
+}
+
+/* =========================
+   CARD
+========================= */
+.card {
+  display: flex;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  flex: 1;
+}
+
+.card-content {
+  flex: 2;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.card-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-weight: 600;
+}
+
+.date {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* =========================
+   FLEXBOX DEMO
+========================= */
+.contenedor-flexible {
+  display: flex;
+  gap: 10px;
+  background-color: var(--primary);
+  border: 2px solid var(--border-dark);
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  padding: 10px;
+}
+
+.boxy {
+  flex: 1;
+  height: 80px;
+  background-color: orange;
+  border: 2px solid var(--border-dark);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .contenedor-flexible {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
