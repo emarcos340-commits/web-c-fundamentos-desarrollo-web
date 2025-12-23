@@ -1,55 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clon de pagina de Starbucks | Flexbox Alineación</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks - Café Premium</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-  <header class="main-header">
-    <div class="container">
-
-      <div class="header-left">
-        <div class="logo">
-          <img src="assets/logo.jpg">
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <div class="logo">
+            <img src="./assets/logo.webp" alt="Starbucks Logo" />
+          </div>
+          <nav>
+            <a href="#carta">Carta</a>
+            <a href="#cafe">Café</a>
+            <a href="#novedades">Novedades</a>
+            <a href="#rewards">Rewards</a>
+          </nav>
         </div>
-
-        <nav>
-          <a href="#">Menu</a>
-          <a href="#">Rewards</a>
-          <a href="#">Gift Cards</a>
-        </nav>
-      </div>
-
-      <div class="header-right">
-        <div class="location">
-          <a href="#">Find a store</a>
+        <div class="header-right">
+          <div class="locacion">
+            <a href="#tienda">
+              <span>🌍</span>
+              <span>Buscar una tienda</span>
+            </a>
+          </div>
+          <div class="iniciar">
+            <button class="btn-registro">Regístrese ahora</button>
+            <button class="btn-iniciar">Iniciar sesión</button>
+          </div>
         </div>
-        <button class="btn-iniciar">Sign in</button>
-        <button class="btn-registro">Join now</button>
       </div>
+    </header>
 
+    <div class="banner">
+      <div class="banner-info">
+        <h1>¿LISTO PARA EL UPSIDE DOWN?</h1>
+        <a href="#explorar">Descubre más</a>
+      </div>
+      <div class="banner-image">
+        <img
+          class="malteada"
+          src="https://cdn.pixabay.com/photo/2018/04/03/19/40/milkshake-3287788_1280.png"
+          alt="Malteada especial"
+        />
+        <img
+          class="fresa"
+          src="https://static.vecteezy.com/system/resources/previews/035/753/879/non_2x/fresh-and-sweet-strawberries-free-png.png"
+          alt="Fresa fresca"
+        />
+        <img
+          class="galleta"
+          src="https://png.pngtree.com/png-vector/20250425/ourmid/pngtree-chocolate-chip-cookie-icon-white-background-png-image_16100260.png"
+          alt="Galleta con chispas"
+        />
+      </div>
     </div>
-  </header>
 
-  <main class="layout">
-
-    <!-- Práctica Alineación con Flexbox -->
-    <section>
-      <h1 class="section-title">Alineación con Flexbox</h1>
-
-      <div class="contenedor-flexible">
-        <div class="boxy pato">Pato</div>
-        <div class="boxy foca">Foca</div>
-        <div class="boxy vaca">Vaca</div>
-        <div class="boxy perro">Perro</div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col footer-logo">
+          <img src="./assets/logo.webp" alt="Starbucks Logo" width="57px" />
+        </div>
+        <div class="footer-col footer-nosotros">
+          <h3>Sobre nosotros</h3>
+          <nav>
+            <a href="#acerca">Acerca de Starbucks</a>
+            <a href="#trabaja">Trabaja con nosotros</a>
+            <a href="#historias">Historias y noticias</a>
+            <a href="#notmilk">Sobre Notmilk</a>
+            <a href="#guia">Guía de preparación</a>
+          </nav>
+        </div>
+        <div class="footer-col footer-cliente">
+          <h3>Atención al cliente</h3>
+          <nav>
+            <a href="#sugerencias">Sugerencias y reclamos</a>
+            <a href="#factura">Factura Electrónica</a>
+          </nav>
+        </div>
+        <div class="footer-col footer-comunicados">
+          <h3>Comunicados Oficiales</h3>
+          <nav>
+            <a href="#comunicados">Ver comunicados</a>
+          </nav>
+        </div>
       </div>
-    </section>
-
-  </main>
-
-</body>
+    </footer>
+  </body>
 </html>
